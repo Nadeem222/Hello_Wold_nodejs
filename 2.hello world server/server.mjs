@@ -1,8 +1,10 @@
 import express from 'express'
+
 const app = express()
 const port = 3000
 
 app.get('/name', (req, res) => {
+  console.log(`${req.ip}is asking for water`)
   res.send('nadeem')
 })
 
